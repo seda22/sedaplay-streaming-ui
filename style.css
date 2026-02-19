@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ul{
+    list-style-type: none;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -16,10 +22,9 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
     padding-top: 2rem;
-
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -34,11 +39,6 @@ header nav {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-}
-
-header nav a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 header nav a:hover {
@@ -58,4 +58,95 @@ header nav a:hover {
     padding: 0.1rem 0.1rem;
     color: aliceblue;
     border-radius: 0.6rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: flex-start;
+    background:linear-gradient(rgba(0,0,0,0.6)), url('./images/background-image.png'), no-repeat,center/cover ;
+    padding: 3rem 2rem;
+    aspect-ratio: 2/1;
+    border-radius: 0.6rem;
+}
+
+main .rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+main .rating .stars{
+    color: goldenrod;
+}
+
+main .rating .age{
+    border: 1px solid red;
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.15rem;
+}
+
+main p{
+    max-width:80%;
+    text-align: justify;
+    padding: 0 auto 0.2rem;
+}
+
+main .detail{
+    font-size: 0.9rem;
+}
+.detail ul{
+    line-height: 1.3rem;
+}
+main .detail span{
+    color: rgb(176, 32, 32);
+}
+
+.play-now{
+background-color: rgb(179, 24, 24);
+border: 2px solid black;
+color: #ffffff;
+padding: 0.5rem 0.8rem;
+border-radius: 0.6rem;
+}
+
+.play-now:hover{
+    background-color: #776969;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.section-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.item img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover; 
+    border-radius: 0.6rem; 
 }
